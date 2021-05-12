@@ -23,15 +23,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintDimensionRatio="4:3"/>
 
-        <!-- TODO (03) Replace title's textSize and textColor with a style. -->
+        <!-- TODO (03) Replace title's textSize and textColor with a style. //DONE -->
         <TextView
                 android:id="@+id/title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                style="@style/TextAppearance.Title"
                 android:text="@string/about_google_developer_groups"
                 android:layout_marginTop="16dp"
-                android:textColor="#555555"
-                android:textSize="24sp"
                 app:layout_constraintTop_toBottomOf="@id/image"
                 app:layout_constraintEnd_toStartOf="@+id/end_grid"
                 app:layout_constraintStart_toStartOf="@+id/start_grid"
@@ -47,15 +46,15 @@
                 android:text="@string/gdg_description_long"
                 android:layout_marginTop="8dp"/>
 
-        <!-- TODO (04) Replace subtitle's textSize and textColor with a style. -->
+        <!-- TODO (04) Replace subtitle's textSize and textColor with a style. //DONE -->
         <TextView
                 android:id="@+id/subtitle"
                 android:layout_width="0dp"
+                style="@style/TextAppearance.Subtitle"
                 android:layout_height="wrap_content"
                 android:text="@string/gdgs_are"
                 android:layout_marginTop="13dp"
                 android:textColor="#555555"
-                android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@id/start_grid"
                 app:layout_constraintEnd_toStartOf="@id/end_grid"
                 app:layout_constraintTop_toBottomOf="@+id/intro_text"/>
