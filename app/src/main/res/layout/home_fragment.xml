@@ -22,26 +22,27 @@
                     android:clipToPadding="true"
                     tools:context=".home.HomeFragment">
 
-                <ImageView
-                        android:id="@+id/image"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        app:srcCompat="@drawable/behind"
-                        android:scaleType="centerCrop"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintDimensionRatio="4:3"/>
-
-                <!-- TODO (01)  Replace the style attribute in title and subtitle TextViews
+                <!-- TODO (01)  Replace the style attribute in title and subtitle TextViews //DONE
                      with textAppearance. -->
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintDimensionRatio="4:3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/behind" />
+
                 <TextView
                         android:id="@+id/title"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="@string/about_google_developer_groups"
                         android:layout_marginTop="16dp"
-                        style="@style/TextAppearance.Title"
+                        android:textAppearance="?textAppearanceHeadline5"
                         app:layout_constraintTop_toBottomOf="@id/image"
                         app:layout_constraintEnd_toStartOf="@+id/end_grid"
                         app:layout_constraintStart_toStartOf="@+id/start_grid"
@@ -63,7 +64,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/gdgs_are"
                         android:layout_marginTop="13dp"
-                        style="@style/TextAppearance.Subtitle"
+                        android:textAppearance="?textAppearanceHeadline6"
                         app:layout_constraintStart_toEndOf="@id/start_grid"
                         app:layout_constraintEnd_toStartOf="@id/end_grid"
                         app:layout_constraintTop_toBottomOf="@+id/intro_text"/>
