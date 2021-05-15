@@ -1,8 +1,8 @@
 <resources>
 
-    <!--  TODO (01) Change AppTheme’s parent from Light to DayNight. -->
+    <!--  TODO (01) Change AppTheme’s parent from Light to DayNight. //DONE -->
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
@@ -18,6 +18,10 @@
 
     <style name="CustomHeadline6" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name= "CustomChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/secondaryTextColor</item>
     </style>
 
 </resources>
